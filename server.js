@@ -27,14 +27,14 @@ app.get('/links', (req, res) => {
     res.render('links.ejs', {Link:links})
 });
 
-app.get('/links/:id', (request, response)=>{
-    response.send(`Links: ${links[request.params.id]}`);
+app.get('/links/:id', (req, res)=>{
+    res.send(`Links: ${links[req.params.id]}`);
 })
 
-app.get('/past/:id', (req, res) => {
-    res.render('past.js', {Past:past})
+app.get('/past', (req, res) => {
+    res.render('past.ejs', {Past:past} );
 });
 
-app.get('/past', (req, res) => {
-    res.send('past');
+app.get('/past/:id', (req, res) => {
+    res.send(`past: ${past[req.params.id]}`)
 });

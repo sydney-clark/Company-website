@@ -9,11 +9,11 @@
 <body>
     <h1>Our Past</h1>
     <ul>
-        <% for(let i = 0; i < Link.length; i++) { %>
+        <% for(let i = 0; i < Past.length; i++) { %>
             <li>
-                <a href="/links/<%=i%>">
-                    <%= Link[i] %>
-                </a>
+                <h2>Past projects: <%= Past[i].Project %></h2>
+                <h3>Price: $<%= Past[i].Price %></h3>
+                <h3>Timeframe to complete: <%= Past[i].Timeframe %></h3>
             </li>
         <% } %>
     </ul>

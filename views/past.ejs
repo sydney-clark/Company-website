@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Our Past</h1>
+    <ul>
+        <% for(let i = 0; i < Link.length; i++) { %>
+            <li>
+                <a href="/links/<%=i%>">
+                    <%= Link[i] %>
+                </a>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>

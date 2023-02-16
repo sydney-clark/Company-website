@@ -4,20 +4,21 @@ const links = require('./links.js');
 const past = require('./past.js');
 const staff = require('./staff.js');
 
+
 app.listen(3000, () => {
 	console.log('Welcome to the best bar ever!');
 });
 
 app.get('/home', (req, res) => {
-    res.send('home');
+    res.render('home.ejs');
 });
 
 app.get('/history', (req, res) => {
-    res.send('history');
+    res.render('history.ejs');
 });
 
 app.get('/contact', (req, res) => {
-    res.send('contact');
+    res.render('contact.ejs');
 });
 
 app.get('/links', (req, res) => {

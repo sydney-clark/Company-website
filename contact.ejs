@@ -17,13 +17,17 @@
     </div>   
         <!-- main -->
         <main>
-            <h1>Contact</h>
+            <h1>Company Contact</h>
             <ul>
-                <% for(let i = 0; i < staff.length; i++) { %>
+                <% for(let i=0; i < Staff.length; i++) { %>
                     <li>
-                        <a href="/staff/<%=i%>"><%= staff[i].name %></a>
+                        <h2><%= Staff[i].Name</h2>
+                        <h2>Past projects: <%= Staff[i].Contact %>
+                        </h2>
+                        <h3>Price: $<%= Staff[i].Email %>
+                        </h3>
                     </li>
-                <% } %>
+                    <% } %>
             </ul>
         </main>
     

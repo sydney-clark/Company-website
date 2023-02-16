@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Our Amazing Staff!</h1>
+    <ul>
+        <% for(let i = 0; i < Staff.length; i++) { %>
+            <li>
+                <h2><%= Staff[i].Name %></h2>
+                <h3>Contact information</h3>
+                <h4>Work Number: <%= Staff[i].Contact %></h4>
+                <h4>Work Email: <%= Staff[i].Email %></h4>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>
